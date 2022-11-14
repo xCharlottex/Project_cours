@@ -23,13 +23,49 @@
     
 // })
 
-const btn = document.querySelector(".button");
+// suite
 
+// const btn = document.querySelector(".button");
+
+// btn.addEventListener('click', function(){
+//     const content = document.querySelector(".paid-content");
+
+//     content.style.display ="block";
+//     btn.style.display='none';
+    
+
+//     // content.classList.remove('paid-content');
+//     // btn.classList.add('display-n');
+
+// })
+
+// suite
+
+const btn = document.querySelector('.button');
+
+// click sur le btn 
 btn.addEventListener('click', function(){
-    const content = document.querySelector(".paid-content");
+    // je veux créer un h1
+    const h1Element = document.createElement('h1');
+    h1Element.textContent ='Mon article';
 
-    content.style.display ="block";
-    btn.style.display='none';
+    const imageElement = document.createElement('img');
+    imageElement.setAttribute('src', '')
+
+    const pElement = document.createElement('p');
+    pElement.textContent = 'blablabla';
+
+    // cibler pour l'id => #, pour la classe => . , pour la balise => rien
+    const container = document.querySelector('.paid-content');
+    container.appendChild(h1Element);
+    container.appendChild(imageElement);
+    container.appendChild(pElement)
+
+    btn.style.display ='none';
 
 
 })
+
+
+
+
